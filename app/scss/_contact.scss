@@ -1,0 +1,48 @@
+.contact {
+  background-color: rgb(183 145 145);
+  height: 100vh;
+}
+
+.contact__map {
+  height: 700px;
+  width: 100%;
+}
+
+.contact .about__logo {
+  margin: unset;
+}
+
+.contact__info {
+  display: flex;
+  max-width: 800px;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.contact__avatar {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.contact__details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.contact__details > p {
+  margin-top: 0;
+}
+
+.contact i::before {
+  font-size: 3rem;
+  color: white;
+}
+
+@include breakpoint-up(large) {
+  .contact i::before {
+    font-size: 4rem;
+  }
+}
