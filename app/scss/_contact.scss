@@ -1,5 +1,5 @@
 .contact {
-  background-color: rgb(183 145 145);
+  background-color: rgb(204, 205, 206);
   height: 100vh;
 }
 
@@ -36,9 +36,20 @@
   margin-top: 0;
 }
 
+.contact i:hover {
+  transform: scale(1.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.contact i:hover::before {
+  color: $color-primary;
+  transition: all 0.3s ease-in-out;
+}
+
 .contact i::before {
   font-size: 3rem;
-  color: white;
+  margin-right: 5px;
+  color: rgb(118, 152, 188);
 }
 
 @include breakpoint-up(large) {

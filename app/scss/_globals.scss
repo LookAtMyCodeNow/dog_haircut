@@ -67,10 +67,6 @@ li {
   color: $color-secondary;
 }
 
-.text-white {
-  color: white;
-}
-
 .gutek {
   color: #ea6300;
 }
@@ -120,6 +116,10 @@ li {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.contact.background {
+  height: unset;
 }
 
 img {
@@ -186,7 +186,7 @@ img {
 
 @include breakpoint-up(large) {
   .about.container {
-    padding: 2rem 2rem 2rem 1rem;
+    padding: 2rem 2rem 4rem 1rem;
   }
 
   .mch-30 {
@@ -210,11 +210,23 @@ img {
     align-items: center;
   }
 
+  .hero .flex {
+    align-items: unset;
+    flex-direction: row;
+  }
+
   .prices .grid {
     justify-items: stretch;
     justify-content: center;
     min-width: 80vw;
     grid-template-columns: unset;
+  }
+}
+
+@include breakpoint-down(normal) {
+  .hero .flex {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
