@@ -48,6 +48,10 @@ p {
   font-size: 2.5rem;
 }
 
+q {
+  quotes: none;
+}
+
 li {
   font-size: 2rem;
   max-width: 41ch;
@@ -61,6 +65,7 @@ li {
 
 .text-secondary {
   color: rgb(69, 143, 218);
+  font-weight: 900;
 }
 
 .gutek {
@@ -209,7 +214,7 @@ img {
 }
 .hero {
   margin-top: 0;
-  background-image: url("/img/dog__background.webp");
+  background-image: url("../img/dog__background.webp");
 }
 
 .navbar {
@@ -301,7 +306,7 @@ img {
 }
 
 .about__me {
-  background-image: url("/img/hairdresser_while_work.webp");
+  background-image: url("../img/hairdresser_while_work.webp");
   border-radius: 50px;
 }
 
@@ -368,8 +373,9 @@ img {
   align-items: center;
 }
 
-.fa-paw {
-  transform: translateY(10px);
+.prices .fa-solid.fa-paw {
+  transform: translate(5px, 2px);
+  margin-right: 5px;
 }
 
 .fa-star::before {

@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta name="description" content="Strzyżenie psów Olsztyn." />
+    <title>Gutek Psi Fryzjer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,31 +12,41 @@
       href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/css/normalize.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-
     <!-- START SECTION 1 -->
 
     <section class="hero flex background">
       <div class="hero-content">
         <nav class="navbar ai-cent container-sm">
-          <a href="" data-aos="fade-right" data-aos-offset="10" data-aos-duration="900">
-            <img src="/img/gutek_logo.webp" alt="" class="navbar_logo" />
+          <a
+            href=""
+            data-aos="fade-right"
+            data-aos-offset="10"
+            data-aos-duration="900"
+          >
+            <img
+              src="img/gutek_logo.webp"
+              alt="A dog logo. White dog in red round background."
+              class="navbar_logo"
+            />
           </a>
-          <div class="flex navbar__links" data-aos="flip-left" data-aos-offset="10" data-aos-duration="900">
-            <a href="">
-              <p >O mnie</p>
+          <div
+            class="flex navbar__links"
+            data-aos="flip-left"
+            data-aos-offset="10"
+            data-aos-duration="900"
+          >
+            <a href="#about">
+              <p>O mnie</p>
             </a>
-            <a href="">
+            <a href="#prices">
               <p>Cennik&Usługi</p>
             </a>
-            <a href="">
-              <p>Galeria</p>
-            </a>
-            <a href="">
+            <a href="#contact">
               <p>Kontakt</p>
             </a>
           </div>
@@ -45,25 +56,35 @@
             „Psy nie są całym naszym życiem, ale sprawiają, że nasze życie jest
             całe”
           </h1>
-          <p class="author">Roger Caras</p class="author">
+          <p class="author">Roger Caras</p>
         </div>
       </div>
     </section>
 
     <!-- END SECTION 1 -->
 
-
     <!-- START SECTION 2 -->
 
-    <section class="about container">
+    <section class="about container" id="about">
       <div>
-        <img src="img/gutek_logo.webp" class="about__logo"  />
+        <img
+          src="img/gutek_logo.webp"
+          class="about__logo"
+          alt="Gutek Logo. White Dog in a red round background."
+        />
         <h2 class="about__header">Gutek Psi Fryzjer</h2>
       </div>
       <div class="about__owner grid grid--1x2 mt-2">
         <div class="about__me background"></div>
-        <div class="about_info flex f-col jc-cent" data-aos="fade-left" data-aos-offset="10" data-aos-duration="1200">
-          <h3 class="text-accent">Witam i zapraszam Państwa do psiego salonu</h3>
+        <div
+          class="about_info flex f-col jc-cent"
+          data-aos="fade-left"
+          data-aos-offset="10"
+          data-aos-duration="1200"
+        >
+          <h3 class="text-accent">
+            Witam i zapraszam Państwa do psiego salonu
+          </h3>
           <i class="fa-solid fa-heart mt-2"></i>
           <p>Miejsce to powstało z pasji miłości do zwierząt.</p>
           <h3 class="text-accent">Ze swojej strony oferuję:</h3>
@@ -71,12 +92,12 @@
             <li><i class="fa-solid fa-paw mr-1"></i> Uczciwą usługę</li>
             <li>
               <i class="fa-solid fa-paw mr-1"></i> Pracę na wysokiej jakości
-              kosmetykach, sprawdzonych ale przedewszystkim bezpiecznych dla waszych
-              pupili
+              kosmetykach, sprawdzonych ale przedewszystkim bezpiecznych dla
+              waszych pupili
             </li>
             <li>
-              <i class="fa-solid fa-paw mr-1"></i> Indywidualnie dobrane kosmetyki
-              do każdego rodzaju szaty
+              <i class="fa-solid fa-paw mr-1"></i> Indywidualnie dobrane
+              kosmetyki do każdego rodzaju szaty
             </li>
           </ul>
           <h3 class="mch-30 mt-2 text-accent">
@@ -89,33 +110,31 @@
 
     <!-- END SECTION 2 -->
 
-
     <!-- START SECTION 3 -->
 
-    <section class="prices">
+    <section class="prices" id="prices">
       <div class="container">
         <div>
-          <img src="img/gutek_logo.webp" class="about__logo mt-4" />
+          <img
+            src="img/gutek_logo.webp"
+            class="about__logo mt-4"
+            alt="This is a
+          Dog Logo. White dog in white round background."
+          />
           <h2 class="about__header gutek">Gutek Psi Fryzjer</h2>
         </div>
       </div>
       <div class="grid grid--1x2 container ai-cent prices__services">
         <div class="prices__services-items">
           <p class="text-secondary">We wszystkich usługach uwzględnione jest</p>
-          <ul >
-            <li >
-              <i class="fa-solid fa-star mr-1 mt-2"></i>kąpiel i suszenie
-            </li>
-            <li >
-              <i class="fa-solid fa-star mr-1"></i>obcinanie pazurów
-            </li>
-            <li ><i class="fa-solid fa-star mr-1"></i>higiena</li>
-            <li >
-              <i class="fa-solid fa-star mr-1"></i>czyszczenie
-            </li>
+          <ul>
+            <li><i class="fa-solid fa-star mr-1 mt-2"></i>kąpiel i suszenie</li>
+            <li><i class="fa-solid fa-star mr-1"></i>obcinanie pazurów</li>
+            <li><i class="fa-solid fa-star mr-1"></i>higiena</li>
+            <li><i class="fa-solid fa-star mr-1"></i>czyszczenie</li>
           </ul>
         </div>
-        <p >
+        <p>
           Podane ceny są cenami orientacyjnymi. Koszt usługi uzależniony jest od
           wielkości psa, rasy, zachowania, kondycji szaty oraz odstępu między
           wizytami.
@@ -128,39 +147,40 @@
             <li>
               <div class="prices__details">
                 <span class="prices__size">
-                  <p >Małe</p>
+                  <q>Małe</q>
                   <i class="fa-solid fa-paw"></i>
                 </span>
-                <p >60zł</p>
+                <p>60zł</p>
               </div>
             </li>
             <li>
               <div class="prices__details">
                 <span class="prices__size">
-                  <p >Średnie</p>
+                  <q>Średnie</q>
                   <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i>
                 </span>
-                <p >80zł</p>
+                <p>80zł</p>
               </div>
             </li>
             <li>
               <div class="prices__details">
                 <span class="prices__size">
-                  <p >Duże</p>
+                  <q>Duże</q>
                   <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i
                   ><i class="fa-solid fa-paw"></i>
                 </span>
-                <p >150zl</p>
+                <p>150zl</p>
               </div>
             </li>
             <li>
               <div class="prices__details">
                 <span class="prices__size">
-                  <p >Olbrzymy</p>
+                  <q>Olbrzymy</q>
                   <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i
-                  ><i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i>
+                  ><i class="fa-solid fa-paw"></i
+                  ><i class="fa-solid fa-paw"></i>
                 </span>
-                <p >od 180zł</p>
+                <q>od 180zł</q>
               </div>
             </li>
           </ul>
@@ -173,85 +193,87 @@
             <li>
               <div class="prices__details">
                 <span class="prices__size">
-                  <p >Małe</p>
+                  <q>Małe</q>
                   <i class="fa-solid fa-paw"></i>
                 </span>
-                <p >100zł</p>
+                <p>100zł</p>
               </div>
             </li>
             <li>
               <div class="prices__details">
                 <span class="prices__size">
-                  <p >Średnie</p>
+                  <q>Średnie</q>
                   <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i>
                 </span>
-                <p >130zł</p>
+                <p>130zł</p>
               </div>
             </li>
             <li>
               <div class="prices__details">
                 <span class="prices__size">
-                  <p >Duże</p>
+                  <q>Duże</q>
                   <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i
                   ><i class="fa-solid fa-paw"></i>
                 </span>
-                <p >150-200zł</p>
+                <p>150-200zł</p>
               </div>
             </li>
             <li>
               <div class="prices__details">
                 <span class="prices__size">
-                  <p >Olbrzymy</p>
+                  <q>Olbrzymy</q>
                   <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i
-                  ><i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i>
+                  ><i class="fa-solid fa-paw"></i
+                  ><i class="fa-solid fa-paw"></i>
                 </span>
-                <p >od 200zł</p>
+                <p>od 200zł</p>
               </div>
             </li>
           </ul>
         </div>
       </div>
-    
+
       <div class="grid grid--1x2 container">
-        <div class="prices__container mt-2 text-secondary">
+        <div class="prices__container mt-2">
           <h3 class="text-secondary">USUWANIE PODSZERSTKA + KĄPIEL</h3>
           <ul>
             <li>
               <div class="prices__details">
                 <span class="prices__size">
-                  <p >Małe</p>
+                  <q>Małe</q>
                   <i class="fa-solid fa-paw"></i>
                 </span>
-                <p >110zł</p>
+                <p>110zł</p>
               </div>
             </li>
             <li>
               <div class="prices__details">
                 <span class="prices__size">
-                  <p >Średnie</p>
+                  <q>Średnie</q>
                   <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i>
                 </span>
-                <p >120-140zł</p>
+                <p>120-140zł</p>
               </div>
             </li>
             <li>
               <div class="prices__details">
                 <span class="prices__size">
-                  <p >Duże</p>
+                  <q>Duże</q>
                   <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i
                   ><i class="fa-solid fa-paw"></i>
                 </span>
-                <p >140-200zl</p>
+                <p>140-200zl</p>
               </div>
             </li>
             <li>
               <div class="prices__details">
                 <span class="prices__size">
-                  <p >Olbrzymy</p>
+                  <q>Olbrzymy</q>
                   <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i
-                  ><i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i>
+                  ><i class="fa-solid fa-paw"></i
+                  ><i class="fa-solid fa-paw"></i>
                 </span>
-                <p >od 200zł</p>
+                <p>od 200zł</p>
               </div>
             </li>
           </ul>
@@ -262,42 +284,41 @@
             <li>
               <div class="prices__details">
                 <span class="prices__size">
-                  <p >Małe</p>
+                  <q>Małe</q>
                   <i class="fa-solid fa-paw"></i>
                 </span>
-                <p >180zł</p>
+                <p>180zł</p>
               </div>
             </li>
             <li>
               <div class="prices__details">
                 <span class="prices__size">
-                  <p >Średnie</p>
+                  <q>Średnie</q>
                   <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i>
                 </span>
-                <p >200zł</p>
+                <p>200zł</p>
               </div>
             </li>
             <li>
               <div class="prices__details">
                 <span class="prices__size">
-                  <p >Duże</p>
+                  <q>Duże</q>
                   <i class="fa-solid fa-paw"></i><i class="fa-solid fa-paw"></i
                   ><i class="fa-solid fa-paw"></i>
                 </span>
-                <p >od 200zł</p>
+                <p>od 200zł</p>
               </div>
             </li>
           </ul>
         </div>
       </div>
     </section>
-    
-    <!-- END SECTION 3 -->
 
+    <!-- END SECTION 3 -->
 
     <!-- START SECTION 4 -->
 
-    <section class="contact background">
+    <section class="contact background" id="contact">
       <div>
         <iframe
           class="contact__map"
@@ -311,7 +332,11 @@
         ></iframe>
       </div>
       <div class="container contact__info">
-        <img src="img/gutek_logo.webp" class="about__logo" />
+        <img
+          src="img/gutek_logo.webp"
+          class="about__logo"
+          alt="This is a Dog Logo. White dog in white round background."
+        />
         <div class="contact__details">
           <p>tel: 533400861</p>
           <p>adres: ul.Kołobrzeska 32e</p>
@@ -325,9 +350,8 @@
         </div>
       </div>
     </section>
-    
-    <!-- END SECTION 4 -->
 
+    <!-- END SECTION 4 -->
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -338,6 +362,5 @@
       src="https://kit.fontawesome.com/5f256ad629.js"
       crossorigin="anonymous"
     ></script>
-    
   </body>
 </html>

@@ -25,8 +25,9 @@
   align-items: center;
 }
 
-.fa-paw {
-  transform: translateY(10px);
+.prices .fa-solid.fa-paw {
+  transform: translate(5px, 2px);
+  margin-right: 5px;
 }
 
 .fa-star::before {
