@@ -5,7 +5,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: rgb(8, 48, 88);
+  color: rgba(40, 42, 46, 0.778);
 }
 
 html {
@@ -14,6 +14,7 @@ html {
   scroll-behavior: smooth;
   box-sizing: border-box;
   background-color: white;
+  overflow-x: hidden;
 }
 
 a {
@@ -57,15 +58,32 @@ li {
   max-width: 41ch;
   line-height: 1.5;
   list-style-type: none;
+  font-weight: 600;
 }
 
 .text-accent {
-  color: rgb(114, 34, 99);
+  color: #778083;
 }
 
 .text-secondary {
-  color: rgb(69, 143, 218);
+  color: rgb(167, 157, 157);
   font-weight: 900;
+}
+
+.text-primary {
+  color: rgb(233, 239, 243);
+}
+
+.text-brown {
+  color: #575050;
+}
+
+.text-thick {
+  font-weight: 900;
+}
+
+.text-c {
+  text-align: center;
 }
 
 .gutek {
@@ -125,6 +143,14 @@ img {
   padding: 1rem 4rem;
 }
 
+.pt7 {
+  padding-top: 7rem;
+}
+
+.pb7 {
+  padding-bottom: 7rem;
+}
+
 .flex {
   display: flex;
 }
@@ -144,12 +170,20 @@ img {
   justify-content: center;
 }
 
+.m-auto {
+  margin: 0 auto;
+}
+
 .mch-30 {
   max-width: 45ch;
 }
 
-.mch-32 {
-  max-width: 32ch;
+.mch-25 {
+  max-width: 25ch;
+}
+
+.mw-17 {
+  max-width: 1700px;
 }
 
 @media (min-width: 52.9375em) {
@@ -157,6 +191,14 @@ img {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+.mt-0 {
+  margin-top: 0;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
 .mt-2 {
   margin-top: 2rem;
 }
@@ -171,7 +213,7 @@ img {
 
 @media (min-width: 64em) {
   .about.container {
-    padding: 2rem 2rem 4rem 1rem;
+    padding: 2rem 2rem 8rem 1rem;
   }
   .mch-30 {
     max-width: 30ch;
@@ -214,7 +256,7 @@ img {
 }
 .hero {
   margin-top: 0;
-  background-image: url("../img/dog__background.webp");
+  background-image: url("../img/background_dog.png");
 }
 
 .navbar {
@@ -229,15 +271,18 @@ img {
   transform: scale(1.2);
   font-weight: 900;
   transition: all 0.5s ease-in-out;
+  color: rgba(121, 31, 31, 0.6);
 }
 
 .navbar__links > a:hover > p {
-  color: rgb(69, 143, 218);
+  color: rgba(67, 61, 61, 0.6);
+  padding: 0 2rem;
+  transition: all 0.5s ease-in-out;
 }
 
 .navbar_logo {
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   transform: translateY(5px);
 }
@@ -248,10 +293,9 @@ img {
 }
 
 .hero__quote {
-  margin-top: 10vh;
-  margin-left: 10vw;
+  margin-top: 19vh;
+  margin-left: 8vw;
   background-color: rgba(255, 255, 255, 0.4);
-  padding: 2rem;
   text-align: center;
   border-radius: 10px;
 }
@@ -271,11 +315,13 @@ img {
     align-items: center;
   }
   .navbar {
-    margin-top: 4rem;
-    width: 80vw;
-    height: 75vh;
+    padding: 15rem 0;
+    gap: 36px;
+    max-width: 500px;
+    border-radius: 15px;
+    height: 65vh;
     margin: 0 auto;
-    justify-content: space-evenly;
+    justify-content: flex-start;
   }
   .navbar__links {
     gap: 40px;
@@ -286,33 +332,52 @@ img {
   .hero__quote {
     display: inline-block;
   }
+  .navbar {
+    max-height: 150px;
+  }
+  .navbar_logo {
+    width: 180px;
+    height: 180px;
+    transform: translateY(38%);
+  }
 }
 .about {
   width: 100%;
-  background-color: #fafafa;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='540' height='450' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='.1'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #fbfbfb;
 }
 
 .about__owner {
   margin-top: 3rem;
+  gap: 100px;
 }
 
 .about__header {
+  color: rgb(76, 76, 76);
   display: flex;
+  text-wrap: nowrap;
+  font-weight: 800;
   justify-content: center;
   align-items: center;
   gap: 1rem;
   margin-top: 0;
 }
 
+.about_info {
+  justify-self: start;
+}
+
 .about__me {
   background-image: url("../img/hairdresser_while_work.webp");
+  max-width: 800px;
+  opacity: 0.9;
+  filter: drop-shadow(2px 4px 6px black);
   border-radius: 50px;
+  justify-self: end;
 }
 
 .about__logo {
-  width: 70px;
-  height: 70px;
+  width: 100px;
+  height: 100px;
   border-radius: 100%;
   margin: 0 auto;
   display: inherit;
@@ -324,13 +389,13 @@ img {
 }
 
 .fa-paw:before {
-  color: brown;
+  color: #6e1b1b;
 }
 
 @media (min-width: 64em) {
   .about__logo {
-    width: 90px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
   }
   .about__me {
     height: 80rem;
@@ -342,14 +407,17 @@ img {
 }
 @media (max-width: 63.9375em) {
   .about__me {
+    margin: 0 auto;
     margin-top: 2rem;
     height: 50rem;
   }
+  .about__info {
+    margin: 0 auto 2rem;
+  }
 }
 .prices {
-  background-color: rgba(4, 2, 4, 0.0705882353);
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
-  padding-bottom: 4rem;
+  background-image: url("../img/inside2.png");
+  height: unset;
 }
 
 .prices > li {
@@ -359,6 +427,18 @@ img {
 .prices__services {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.prices__services-items {
+  background-color: #c0c0c0;
+  border-radius: 20px;
+  padding: 2rem 3rem;
+}
+
+.prices__container {
+  background-color: rgb(233, 239, 243);
+  border-radius: 20px;
+  padding: 2rem 3rem;
 }
 
 .prices__details {
@@ -379,7 +459,7 @@ img {
 }
 
 .fa-star::before {
-  color: brown;
+  color: #6e1b1b;
 }
 
 @media (max-width: 63.9375em) {
@@ -388,69 +468,59 @@ img {
     flex-direction: column;
     align-items: center;
   }
-  .prices__services-items > p {
-    font-size: 4rem;
+  .prices__services-items > .sm {
+    font-size: 2rem;
   }
   .prices__services-items li {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 }
 .contact {
-  background-color: rgb(204, 205, 206);
-  height: 100vh;
+  background-color: rgb(234, 234, 235);
+  flex-direction: column;
 }
 
-.contact__map {
-  height: 700px;
+.dogs__contact {
+  display: flex;
+  gap: 15px;
   width: 100%;
 }
 
-.contact .about__logo {
-  margin: unset;
+.dog-labrador {
+  margin-top: 6rem;
 }
 
-.contact__info {
-  display: flex;
-  max-width: 800px;
-  align-items: center;
-  justify-content: space-around;
-  margin: 0 auto;
+.dog-big {
+  transform: translateY(20px);
 }
 
-.contact__avatar {
-  display: flex;
+.dog-small {
+  margin-top: 5rem;
+}
+
+.dogs__logo {
   flex-direction: row;
-  gap: 10px;
+  width: 400px;
+  gap: 20px;
+  background-color: rgba(216, 211, 211, 0.6);
+  border-radius: 12px;
+  padding: 2rem;
 }
 
-.contact__details {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+@media (min-width: 52.9375em) {
+  .dogs__contact {
+    width: 100%;
+    margin-top: 8rem;
+  }
+  .dogs__logo {
+    margin-top: 8rem;
+  }
+  .dog-big {
+    margin-left: 5px;
+  }
 }
-
-.contact__details > p {
-  margin-top: 0;
-}
-
-.contact i:hover {
-  transform: scale(1.3);
-  transition: all 0.3s ease-in-out;
-}
-
-.contact i:hover::before {
-  color: rgb(8, 48, 88);
-  transition: all 0.3s ease-in-out;
-}
-
-.contact i::before {
-  font-size: 3rem;
-  margin-right: 5px;
-  color: rgb(118, 152, 188);
-}
-
 @media (min-width: 64em) {
-  .contact i::before {
-    font-size: 4rem;
+  .dogs__logo {
+    width: 550px;
   }
 }/*# sourceMappingURL=styles.css.map */

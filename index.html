@@ -21,13 +21,13 @@
 
     <section class="hero flex background">
       <div class="hero-content">
-        <nav class="navbar ai-cent container-sm">
-          <a
-            href=""
-            data-aos="fade-right"
-            data-aos-offset="10"
-            data-aos-duration="900"
-          >
+        <nav
+          class="navbar ai-cent container-sm"
+          data-aos="zoom-in"
+          data-aos-offset="10"
+          data-aos-duration="60"
+        >
+          <a href="">
             <img
               src="img/gutek_logo.webp"
               alt="A dog logo. White dog in red round background."
@@ -41,17 +41,22 @@
             data-aos-duration="900"
           >
             <a href="#about">
-              <p>O mnie</p>
+              <p class="text-secondary">O mnie</p>
             </a>
             <a href="#prices">
-              <p>Cennik&Usługi</p>
+              <p class="text-secondary">Cennik&Usługi</p>
             </a>
             <a href="#contact">
-              <p>Kontakt</p>
+              <p class="text-secondary">Kontakt</p>
             </a>
           </div>
         </nav>
-        <div class="hero__quote hidden">
+        <div
+          class="hero__quote hidden"
+          data-aos="flip-left"
+          data-aos-offset="10"
+          data-aos-duration="60"
+        >
           <h1>
             „Psy nie są całym naszym życiem, ale sprawiają, że nasze życie jest
             całe”
@@ -65,8 +70,8 @@
 
     <!-- START SECTION 2 -->
 
-    <section class="about container" id="about">
-      <div>
+    <section class="about container pb7" id="about">
+      <div class="container">
         <img
           src="img/gutek_logo.webp"
           class="about__logo"
@@ -74,21 +79,21 @@
         />
         <h2 class="about__header">Gutek Psi Fryzjer</h2>
       </div>
-      <div class="about__owner grid grid--1x2 mt-2">
+      <div
+        class="about__owner grid grid--1x2 mt-2"
+        data-aos="fade-right"
+        data-aos-offset="450"
+        data-aos-duration="1200"
+      >
         <div class="about__me background"></div>
-        <div
-          class="about_info flex f-col jc-cent"
-          data-aos="fade-left"
-          data-aos-offset="10"
-          data-aos-duration="1200"
-        >
+        <div class="about_info flex f-col jc-cent">
           <h3 class="text-accent">
             Witam i zapraszam Państwa do psiego salonu
           </h3>
-          <i class="fa-solid fa-heart mt-2"></i>
-          <p>Miejsce to powstało z pasji miłości do zwierząt.</p>
-          <h3 class="text-accent">Ze swojej strony oferuję:</h3>
-          <ul class="mt-2">
+          <i class="fa-solid fa-heart mt-1"></i>
+          <p class="mt-1">Miejsce to powstało z pasji miłości do zwierząt.</p>
+          <h3 class="text-accent mt-4">Ze swojej strony oferuję:</h3>
+          <ul class="mt-1">
             <li><i class="fa-solid fa-paw mr-1"></i> Uczciwą usługę</li>
             <li>
               <i class="fa-solid fa-paw mr-1"></i> Pracę na wysokiej jakości
@@ -100,7 +105,7 @@
               kosmetyki do każdego rodzaju szaty
             </li>
           </ul>
-          <h3 class="mch-30 mt-2 text-accent">
+          <h3 class="mch-30 mt-4 text-accent">
             Moim priorytetem jest dbanie o wygląd, komfort, samopoczucie oraz
             zadowolenie Waszych pupili i Was Drodzy Właściciele
           </h3>
@@ -112,8 +117,8 @@
 
     <!-- START SECTION 3 -->
 
-    <section class="prices" id="prices">
-      <div class="container">
+    <section class="prices background" id="prices">
+      <div class="container pt7">
         <div>
           <img
             src="img/gutek_logo.webp"
@@ -124,9 +129,16 @@
           <h2 class="about__header gutek">Gutek Psi Fryzjer</h2>
         </div>
       </div>
-      <div class="grid grid--1x2 container ai-cent prices__services">
+      <div
+        class="grid grid--1x2 container ai-cent prices__services"
+        data-aos="flip-right"
+        data-aos-offset="350"
+        data-aos-duration="1200"
+      >
         <div class="prices__services-items">
-          <p class="text-secondary">We wszystkich usługach uwzględnione jest</p>
+          <p class="text-thick text-brown mch-25 text-c">
+            We wszystkich usługach uwzględnione jest
+          </p>
           <ul>
             <li><i class="fa-solid fa-star mr-1 mt-2"></i>kąpiel i suszenie</li>
             <li><i class="fa-solid fa-star mr-1"></i>obcinanie pazurów</li>
@@ -134,16 +146,23 @@
             <li><i class="fa-solid fa-star mr-1"></i>czyszczenie</li>
           </ul>
         </div>
-        <p>
-          Podane ceny są cenami orientacyjnymi. Koszt usługi uzależniony jest od
-          wielkości psa, rasy, zachowania, kondycji szaty oraz odstępu między
-          wizytami.
-        </p>
+        <div class="prices__services-items">
+          <p class="text-thick text-brown text-c mch-25 sm">
+            Podane ceny są cenami orientacyjnymi. Koszt usługi uzależniony jest
+            od wielkości psa, rasy, zachowania, kondycji szaty oraz odstępu
+            między wizytami.
+          </p>
+        </div>
       </div>
-      <div class="grid grid--1x2 container">
+      <div
+        class="grid grid--1x2 container mw-17 m-auto"
+        data-aos="fade-left"
+        data-aos-offset="350"
+        data-aos-duration="1200"
+      >
         <div class="prices__container mt-2">
-          <h3 class="text-secondary">KĄPIEL + SUSZENIE</h3>
-          <ul>
+          <h3 class="text-secondary">STANDARD</h3>
+          <ul class="mt-2">
             <li>
               <div class="prices__details">
                 <span class="prices__size">
@@ -180,16 +199,16 @@
                   ><i class="fa-solid fa-paw"></i
                   ><i class="fa-solid fa-paw"></i>
                 </span>
-                <q>od 180zł</q>
+                <p>od 180zł</p>
               </div>
             </li>
           </ul>
         </div>
         <div class="prices__container mt-2">
-          <h3 class="mch-32 text-secondary">
-            KĄPIEL + SUSZENIE + PAZURY + HIGIENA + CZYSZCZENIE USZU I OCZU
+          <h3 class="mch-25 text-secondary m-auto">
+            STANDARD + CZYSZCZENIE USZU I OCZU
           </h3>
-          <ul>
+          <ul class="mt-2">
             <li>
               <div class="prices__details">
                 <span class="prices__size">
@@ -233,10 +252,16 @@
         </div>
       </div>
 
-      <div class="grid grid--1x2 container">
-        <div class="prices__container mt-2">
-          <h3 class="text-secondary">USUWANIE PODSZERSTKA + KĄPIEL</h3>
-          <ul>
+      <div
+        class="grid grid--1x2 container pb7 mw-17 m-auto"
+        class="grid grid--1x2 container mw-17 m-auto"
+        data-aos="flip-left"
+        data-aos-offset="350"
+        data-aos-duration="1200"
+      >
+        <div class="prices__container m-auto mt-2 m-auto">
+          <h3 class="text-secondary mch-25">STANDARD + USUWANIE PODSZERSTKA</h3>
+          <ul class="mt-2">
             <li>
               <div class="prices__details">
                 <span class="prices__size">
@@ -279,8 +304,8 @@
           </ul>
         </div>
         <div class="prices__container mt-2">
-          <h3 class="text-secondary">TRYMOWANIE + KĄPIEL</h3>
-          <ul>
+          <h3 class="text-secondary">STANDARD + <br />TRYMOWANIE</h3>
+          <ul class="mt-2">
             <li>
               <div class="prices__details">
                 <span class="prices__size">
@@ -318,36 +343,72 @@
 
     <!-- START SECTION 4 -->
 
-    <section class="contact background" id="contact">
-      <div>
-        <iframe
-          class="contact__map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2357.5601645639663!2d20.5028252!3d53.779517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e27930361a8ad3%3A0x1ec49cd384117477!2sKo%C5%82obrzeska%2032E%2C%2010-432%20Olsztyn%2C%20Poland!5e0!3m2!1sen!2sdk!4v1691750091247!5m2!1sen!2sdk"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
+    <section class="contact container flex" id="contact">
+      <div class="dogs__contact flex jc-cent m-auto">
+        <div
+          class="dog dog-labrador"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-duration="900"
+        >
+          <a href="tel:53 340 08 61">
+            <img
+              src="img/footer_img/dog_contact-transparent.png"
+              alt="A dog with the phone number tel: 53 340 08 61."
+              target="_blank"
+            />
+          </a>
+        </div>
+        <div
+          class="dog"
+          data-aos="flip-left"
+          data-aos-offset="300"
+          data-aos-duration="900"
+        >
+          <img
+            class="dog dog-big"
+            src="img/footer_img/dog_mail-transparent.png"
+            alt="A dog with the email gutek@psi.fryzjer.pl"
+          />
+        </div>
+        <div
+          class="dog dog-small"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-duration="900"
+        >
+          <img
+            src="img/footer_img/dog_address-transparent.png"
+            alt="A small chilala with the address ul.Kołobrzeska 32e."
+          />
+        </div>
       </div>
-      <div class="container contact__info">
-        <img
-          src="img/gutek_logo.webp"
-          class="about__logo"
-          alt="This is a Dog Logo. White dog in white round background."
-        />
-        <div class="contact__details">
-          <p>tel: 533400861</p>
-          <p>adres: ul.Kołobrzeska 32e</p>
-          <p>email: gutek@psi.fryzjer.pl</p>
-        </div>
-        <div class="contact__avatar">
-          <i class="fa-brands fa-facebook"></i>
-          <i class="fa-brands fa-instagram"></i>
-          <i class="fa-brands fa-linkedin"></i>
-          <i class="fa-brands fa-snapchat"></i>
-        </div>
+      <div
+        class="dogs__logo flex jc-cent m-auto mt-4"
+        data-aos="flip-up"
+        data-aos-offset="300"
+        data-aos-duration="700"
+      >
+        <a
+          href="https://www.facebook.com/profile.php?id=100090466510285"
+          class="dog__logo"
+          target="_blank"
+        >
+          <img
+            src="img/footer_img/dog_facebook.png"
+            alt="A clickable dog called Facebook outside the house."
+          />
+        </a>
+        <a
+          href="https://www.instagram.com/gutekpsifryzjer/?igshid=MmIzYWVlNDQ5Yg%3D%3D&fbclid=IwAR3IOsCWeaQ8uHwbVb1Ru6AaBORGRGi4lQ11sEQKgGGB9Qik7egKCE4eXTA"
+          class="dog__logo"
+          target="_blank"
+        >
+          <img
+            src="img/footer_img/dog_instagram.png"
+            alt="A clickable dog called Instagram outside the house."
+          />
+        </a>
       </div>
     </section>
 
